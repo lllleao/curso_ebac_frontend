@@ -14,18 +14,20 @@
             </header>
             <section class="card">
                 <h2>Vamos checar se A &lt; B</h2>
-                <div class="text-numero">
-                    <div class="text-numeroA">
-                        <label for="numeroA">A:</label>
-                        <input type="number" id="numeroA">
+                <form>
+                    <div class="text-numero">
+                        <div class="text-numeroA">
+                            <label for="numeroA">A:</label>
+                            <input type="number" id="numeroA">
+                        </div>
+                        <span class="menor-q">&lt;</span>
+                        <div class="text-numeroB">
+                            <label for="numeroB">B:</label>
+                            <input type="number" id="numeroB">
+                        </div>
+                        <input type="button" class="btn" value="Verificar">
                     </div>
-                    <span class="menor-q">&lt;</span>
-                    <div class="text-numeroB">
-                        <label for="numeroB">B:</label>
-                        <input type="number" id="numeroB">
-                    </div>
-                    <input type="button" class="btn" value="Verificar">
-                </div>
+                </form>
                 <p class="resultado">
                     Resultado...
                 </p>
