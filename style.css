@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background: rgb(40, 147, 209);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+header, footer {
+    margin: 15px 0;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+label, .menor-q {
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+.text-numero {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    transition: all .5s;
+}
+
+p.back {
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
