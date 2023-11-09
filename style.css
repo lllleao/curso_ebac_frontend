@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(33, 209, 106);
+    margin-bottom: 56px;
+    padding: 16px 0;
+    color: white;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h1 {
+    font-style: italic;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.container li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.sobre-loja {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    column-gap: 5%;
+    margin-bottom: 85px;
+}
+
+.sobre-loja img {
+    width: 100%;
+}
+
+h2 {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #21d16a;
+    font-style: italic;
+    margin-bottom: 36px;
+    font-weight: bold;
+}
+
+.produtos .livros {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+.produtos h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.produtos button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #21d16a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.produtos button:hover {
+    background-color: #21d16ae1;
+}
+
+footer {
+    background-color: rgb(33, 209, 106) ;
+    margin-top: 85px;
+    padding: 10px 0;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+
+    .container h1 {
+        max-width: 50%;
+    }
+
+    .container li {
+        display: block;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        margin-bottom: 32px;
+    }
+
+    .produtos .livros {
+        display: block;
+    }
+
+    .livros {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .livros article {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        margin-bottom: 32px;
+    }
+
+    .produtos .livros {
+        grid-template-columns: repeat(2, 47.5%);
+        row-gap: 4%;
+    }
+}
